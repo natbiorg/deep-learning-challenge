@@ -5,14 +5,8 @@ This analysis classifies whether applicants will be successful or not succesfful
 The model produced is able to predict whether an applicant will be successful with 0.73 accuracy and 0.55 loss. 
   
 <h3> Data Preprocessing</h3>
-The data we receive from Alphabet Soup has 34,299 samples and 12 features. The majority of the features are category freatures leading us to convert most of them to dummies. 
-
-We are most interested in whether the application was susccessful, what type of application it was, and how the application was classified. 
-We convert these category features into dummies so that the majority of columns (44) are now binary. 
-
-What variable(s) are the target(s) for your model?
-What variable(s) are the features for your model?
-What variable(s) should be removed from the input data because they are neither targets nor features?
+The data we receive from Alphabet Soup has 34,299 samples and 12 features. The majority of the features are categorical leading us to convert most of them to dummies. 
+We drop columns identification columns EIN and Name and covert outlier values for Application Type and Classification to other. These values are not relevant for analysis. We then tranform the remaining features into binary columns where applicable. This leaves us with 43 input features, again the majority of which are binary classification features. 
 
 <h3> Compiling, Training, and Evaluating the Model</h3>
 The model includes 2 hidden layers and 1 output layer for 3 layers todal. It has 80 neurons on the first hidden layer, 30 on the second hidden layer for 110 total. 
@@ -22,3 +16,4 @@ In the future, I would increase model performance by increasing the number of ne
 I would also take another look at my data preprocessing methods and determine whether they are best for this data. 
 
 <h2> Summary </h2>
+This deep learning analysis classifies the success of applicants for funding from Alphabet Soup, using 34,000 previous applicants. The model achieved 0.73 accuracy with 0.55 loss, indicating room for improvement. 
