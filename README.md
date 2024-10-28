@@ -16,4 +16,4 @@ In the future, I would increase model performance by increasing the number of ne
 I would also take another look at my data preprocessing methods and determine whether they are best for this data. 
 
 <h2> Summary </h2>
-This deep learning analysis classifies the success of applicants for funding from Alphabet Soup, using 34,000 previous applicants. The model achieved 0.73 accuracy with 0.55 loss, indicating room for improvement. 
+This deep learning analysis classifies the success of applicants for funding from Alphabet Soup, using 34,000 previous applicants. The model achieved 0.73 accuracy with 0.55 loss, indicating room for improvement. It may be worth trying a logrithmic regression instead to explore whether there is a linear relationship between the features and an applicants success. 
